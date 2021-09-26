@@ -5,6 +5,7 @@
     &-inner {
         display: flex;
         align-items: center;
+        justify-content: space-between;
 
         .Title-title {
             font-style: normal;
@@ -32,5 +33,22 @@
             line-height: 17px;
             color: #979797;
         }
+    }
+
+    &-num {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #05245B;
+    }
+
+    &-numLine {
+        content: "";
+        background: #000;
+        opacity: 0.4;
+        width: 35px;
+        height: 2px;
+        margin: 0 10px;
     }
 }

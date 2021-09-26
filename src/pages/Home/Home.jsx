@@ -5,16 +5,29 @@ import Title from '../../components/Title';
 import Header from '../../containers/Header';
 import CardView from '../../components/CardView';
 import SocialLink from '../../components/SocialLink';
+import ActivityCard from '../../components/ActivityCard';
+import MediaCard from '../../components/MediaCard';
+import InteractiveBtn from '../../components/InteractiveBtn';
 import BgImg1 from '../../assets/images/NewsCardImg1.png';
 import BgImg2 from '../../assets/images/NewsCardImg2.png';
 import BgImg3 from '../../assets/images/NewsCardImg3.png';
 import BgImg4 from '../../assets/images/NewsCardImg4.png';
 import CardViewImg1 from '../../assets/images/CardViewImg1.png';
 import CardViewImg2 from '../../assets/images/CardViewImg2.png';
+import Icon1 from '../../assets/images/icons/ActivityIcon1.svg';
+import {
+    SocialCoruptionIcon,
+    SocialTelegramIcon,
+    ActivityCardIcon1,
+    ActivityCardIcon2,
+    ActivityCardIcon3,
+    ActivityCardIcon4,
+    NmadirIcon
+
+} from '../../assets/icons/icons';
 
 import './Home.scss';
 
-import { SocialCoruptionIcon, SocialTelegramIcon } from '../../assets/icons/icons';
 
 const Home = () => {
     return (
@@ -58,6 +71,55 @@ const Home = () => {
 
 
                 <Title title="Faoliyat yo‘nalishlari" line/>
+
+                <div className="activityCards">
+                    <ActivityCard
+                        cardIcon={NmadirIcon}
+                        cardTitle="Ko‘mir, kon-ruda va noruda sohalarida sanoat xavfsizligi inspeksiyasi"
+                    />
+
+                    <ActivityCard
+                        cardIcon={ActivityCardIcon1}
+                        cardTitle="Ko‘mir, kon-ruda va noruda sohalarida sanoat xavfsizligi inspeksiyasi"
+                    />
+
+                    <ActivityCard
+                        cardIcon={ActivityCardIcon1}
+                        cardTitle="Ko‘mir, kon-ruda va noruda sohalarida sanoat xavfsizligi inspeksiyasi"
+                    />
+
+                    <ActivityCard
+                        cardIcon={ActivityCardIcon1}
+                        cardTitle="Ko‘mir, kon-ruda va noruda sohalarida sanoat xavfsizligi inspeksiyasi"
+                    />
+
+                    <ActivityCard
+                        cardIcon={ActivityCardIcon1}
+                        cardTitle="Ko‘mir, kon-ruda va noruda sohalarida sanoat xavfsizligi inspeksiyasi"
+                    />
+
+                    <ActivityCard
+                        cardIcon={ActivityCardIcon1}
+                        cardTitle="Ko‘mir, kon-ruda va noruda sohalarida sanoat xavfsizligi inspeksiyasi"
+                    />
+                </div>
+
+                <Title title="Interaktiv xizmatlar" line />
+
+                <div style={{marginBottom: '65px'}}>
+                    <InteractiveBtn title={[
+                        "Fuqarolar murojaati",
+                        "Ochiq ma’lumotlar",
+                        "Korrupsiyaga qarshi kurash",
+                        "Ishonch telefonlari",
+                        "Tender e’lonlari",
+                        "Bo‘sh ish o‘rinlari"
+                    ]} />
+                </div>
+
+                <Title title="Media" buttons line />
+                
+                <MediaCard date="03 Yanvar 2020, 09:41" title="Harbiylashtirilgan kon qutqaruv qismlarining tezkor tayyorgarligini monitoringi tadbiri bo‘lib o‘tdi" />
             </div>
         </div>
     )

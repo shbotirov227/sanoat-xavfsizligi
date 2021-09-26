@@ -36,6 +36,11 @@
         transition: all ease 0.5s;
         cursor: pointer;
 
+        &.userIcon {
+            fill: #fff;
+            background: #4318BE;
+        }
+
         &:hover {
             fill: #fff;
             background: #4318BE;

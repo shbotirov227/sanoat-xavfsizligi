@@ -1,0 +1,41 @@
+.InteractiveBtn {
+    background: #FFFFFF;
+    border: 1px solid #CEDAE0;
+    border-radius: 4px;
+    padding: 16px 25px;
+    min-width: 375px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-right: 35px;
+    transition: all ease 0.5s;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .iconstyle {
+        fill: #9FBAD3;
+    }
+
+    &:hover {
+        .InteractiveBtn-title {
+            color: #4C81DC;
+        }
+        .iconstyle {
+            transition: all ease 0.5s;
+            fill: #05245B;
+            // transform: rotate(-90deg);
+        }
+    }
+
+    &-title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 29px;
+        color: #05245B;
+        margin-right: 20px;
+        transition: all ease 0.5s;
+    }
+
+}

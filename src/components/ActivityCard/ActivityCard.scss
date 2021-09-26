@@ -1,0 +1,33 @@
+.ActivityCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 25px;
+    transition: all ease 0.5s;
+    width: 418px;
+    background-color: #fff;
+    border: 1px solid #CEDAE0;
+
+    &:hover {
+        background: #05245B;
+
+        .ActivityCard-title {
+            color: #fff;
+        }
+    }
+
+    &-icon {
+        fill: #4C81DC;
+        margin-right: 25px;
+        width: 55px;
+        height: 55px;
+    }
+
+    &-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #05245B;
+    }
+}

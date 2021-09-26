@@ -1,9 +1,14 @@
+import { useState } from 'react';
 import { BrowserRouter as Router, NavLink } from 'react-router-dom';
-import { NavbarLeftIcon, SearchIcon, UserIcon } from '../../assets/icons/icons';
+
+import { ExitIcon, NavbarLeftIcon, SearchIcon, UserIcon } from '../../assets/icons/icons';
 
 import './Navbar.scss';
 
 const Navbar = ({links}) => {
+
+    const [ toggle, setToggle ] = useState(false);
+
     return (
         <div className="Navbar">
             <Router>
@@ -17,7 +22,11 @@ const Navbar = ({links}) => {
                 </div>
 
                <div style={{display: 'flex', alignItems: 'center'}}>
-                    <button className="navbarBtn"><UserIcon/></button>
+                    <button onClick={() => setToggle(true)} className="navbarBtn userIcon">
+                        {
+                            toggle === false ? <UserIcon /> : <ExitIcon />                            
+                        }
+                    </button>
                     <button className="navbarBtn"><SearchIcon /></button>
                </div>
             </Router>
