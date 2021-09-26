@@ -1,0 +1,35 @@
+.CardView {
+    display: flex;
+    align-items: center;
+    max-width: 78%;
+    margin-bottom: 45px;
+    
+    &:hover {
+        .CardView-title {
+            color: #4C81DC;
+        }
+    }
+    
+    &-date {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #979797;
+    }
+    
+    &-title {
+        margin-top: 10px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #05245B;
+        transition: all ease 0.5s;
+    }
+
+    &-img {
+        width: 180px;
+        height: 110px;
+    }
+}

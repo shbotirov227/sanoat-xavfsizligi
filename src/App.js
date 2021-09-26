@@ -1,10 +1,6 @@
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch
-} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import Header from "./containers/Header/Header";
+import { Home } from './pages';
 
 import './assets/styles/main.scss';
 
@@ -13,7 +9,7 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route exact component={Header}/>
+          <Route exact component={Home}/>
         </Switch>
       </Router>
     </div>

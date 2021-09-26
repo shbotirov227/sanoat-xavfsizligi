@@ -1,0 +1,21 @@
+.Home {
+    .cards-grid {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        margin-bottom: 45px;
+    }
+
+    .socialTelegram {
+        background: linear-gradient(180deg, #039BE5 0%, #038CCF 100%);
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+
+    .socialCoruption {
+        background: url('../../assets/images/SocialLinkBefore2.png'), #A87525;
+        background-repeat: no-repeat;
+        border-radius: 4px;
+    }
+}

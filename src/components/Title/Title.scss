@@ -1,0 +1,36 @@
+.Title {
+    margin-bottom: 30px;
+    position: relative;
+
+    &-inner {
+        display: flex;
+        align-items: center;
+
+        .Title-title {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+            color: #05245B;
+            margin-right: 25px;
+    
+            
+            &.line:before {
+                content: "";
+                position: absolute;
+                width: 35px;
+                height: 2px;
+                background: #4C81DC;
+                bottom: -5px;
+            }
+        }
+
+        .Title-text {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: #979797;
+        }
+    }
+}

@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { BrowserRouter as Router, NavLink } from 'react-router-dom';
+import { NavbarLeftIcon, SearchIcon, UserIcon } from '../../assets/icons/icons';
 
 import './Navbar.scss';
 
@@ -6,14 +7,19 @@ const Navbar = ({links}) => {
     return (
         <div className="Navbar">
             <Router>
-                {
-                    links.map(item => {
-                        return <Link to="">{item}</Link>
-                    })
-                }
+                <div style={{display: 'flex', alignItems: 'center'}}>
+                    <button className="navbarBtn"><NavbarLeftIcon iconStyle="opacity: '0.4'" /></button>
+                    {
+                        links.map(item => {
+                            return <NavLink to="" className="navbarLink">{item}</NavLink>
+                        })
+                    }
+                </div>
 
-            <button>iconUser</button>
-            <button>IconSearch</button>
+               <div style={{display: 'flex', alignItems: 'center'}}>
+                    <button className="navbarBtn"><UserIcon/></button>
+                    <button className="navbarBtn"><SearchIcon /></button>
+               </div>
             </Router>
         </div>
     )
