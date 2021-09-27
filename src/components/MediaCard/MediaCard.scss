@@ -1,4 +1,9 @@
 .MediaCard {
+    width: 275px;
+    height: 325px;
+    // background: rgba(5, 36, 91, 0.5);
+    // border-radius: 4px;
+
     &-date {
         font-style: normal;
         font-weight: normal;
@@ -13,5 +18,9 @@
         font-size: 16px;
         line-height: 19px;
         color: #05245B;
+    }
+
+    &-img{ 
+
     }
 }

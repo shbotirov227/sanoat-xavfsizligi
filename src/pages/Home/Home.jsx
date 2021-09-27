@@ -14,7 +14,7 @@ import BgImg3 from '../../assets/images/NewsCardImg3.png';
 import BgImg4 from '../../assets/images/NewsCardImg4.png';
 import CardViewImg1 from '../../assets/images/CardViewImg1.png';
 import CardViewImg2 from '../../assets/images/CardViewImg2.png';
-import Icon1 from '../../assets/images/icons/ActivityIcon1.svg';
+import MediaCardImg1 from '../../assets/images/MediaCardBg1.png';
 import {
     SocialCoruptionIcon,
     SocialTelegramIcon,
@@ -22,7 +22,6 @@ import {
     ActivityCardIcon2,
     ActivityCardIcon3,
     ActivityCardIcon4,
-    NmadirIcon
 
 } from '../../assets/icons/icons';
 
@@ -74,7 +73,7 @@ const Home = () => {
 
                 <div className="activityCards">
                     <ActivityCard
-                        cardIcon={NmadirIcon}
+                        cardIcon={ActivityCardIcon1}
                         cardTitle="Ko‘mir, kon-ruda va noruda sohalarida sanoat xavfsizligi inspeksiyasi"
                     />
 
@@ -119,7 +118,25 @@ const Home = () => {
 
                 <Title title="Media" buttons line />
                 
-                <MediaCard date="03 Yanvar 2020, 09:41" title="Harbiylashtirilgan kon qutqaruv qismlarining tezkor tayyorgarligini monitoringi tadbiri bo‘lib o‘tdi" />
+                <div style={{marginBottom: '65px'}}>
+                    <MediaCard
+                        date="03 Yanvar 2020, 09:41"
+                        title="Harbiylashtirilgan kon qutqaruv qismlarining tezkor tayyorgarligini monitoringi tadbiri bo‘lib o‘tdi"
+                        img={MediaCardImg1}
+                    />
+
+                    <MediaCard
+                        date="03 Yanvar 2020, 09:41"
+                        title="Harbiylashtirilgan kon qutqaruv qismlarining tezkor tayyorgarligini monitoringi tadbiri bo‘lib o‘tdi"
+                        img={MediaCardImg1}
+                    />
+
+                    <MediaCard
+                        date="03 Yanvar 2020, 09:41"
+                        title="Harbiylashtirilgan kon qutqaruv qismlarining tezkor tayyorgarligini monitoringi tadbiri bo‘lib o‘tdi"
+                        img={MediaCardImg1}
+                    />
+                </div>
             </div>
         </div>
     )

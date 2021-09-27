@@ -24,7 +24,7 @@ const Navbar = ({links}) => {
                <div style={{display: 'flex', alignItems: 'center'}}>
                     <button onClick={() => setToggle(true)} className="navbarBtn userIcon">
                         {
-                            toggle === false ? <UserIcon /> : <ExitIcon />                            
+                            toggle === false ? <UserIcon /> : <ExitIcon />         
                         }
                     </button>
                     <button className="navbarBtn"><SearchIcon /></button>
