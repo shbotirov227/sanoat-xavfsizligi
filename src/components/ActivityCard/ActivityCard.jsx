@@ -1,5 +1,6 @@
 
 import { Link } from 'react-router-dom';
+
 import './ActivityCard.scss';
 
 const ActivityCard = ({ cardIcon, cardTitle }) => {

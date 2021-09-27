@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import { Facebook, Instagram, Twitter, Telegram } from '../../assets/icons/icons';
 import HeadLogo from '../../assets/images/icons/HeadLogo.png';
 import UzbLogo from '../../assets/images/Uzb.png';
@@ -10,10 +12,10 @@ const HeaderItems = () => {
             <div className="header-inner">
 
                 <div className="header-left">
-                    <div className="headerLogo">
-                            <img src={HeadLogo} alt="" />
+                    <Link to="/" className="headerLogo">
+                        <img src={HeadLogo} alt="" />
                         <h2 className="headerLogo-title">O'zbekiston Respublikasi<br></br>Sanoat xavfsizligi davlat qo'mitasi</h2>
-                    </div>
+                    </Link>
 
                     <div className="blockquote">
                         <blockquote className="blockquote-title">Sanoat xavfsizligini ta’minlash,<br></br>kelajakda yuksalish demakdir.</blockquote>

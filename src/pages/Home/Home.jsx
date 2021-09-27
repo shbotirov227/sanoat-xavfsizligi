@@ -7,6 +7,8 @@ import CardView from '../../components/CardView';
 import SocialLink from '../../components/SocialLink';
 import ActivityCard from '../../components/ActivityCard';
 import MediaCard from '../../components/MediaCard';
+import LinkCard from '../../components/LinkCard';
+import Footer from '../../containers/Footer';
 import InteractiveBtn from '../../components/InteractiveBtn';
 import BgImg1 from '../../assets/images/NewsCardImg1.png';
 import BgImg2 from '../../assets/images/NewsCardImg2.png';
@@ -15,6 +17,12 @@ import BgImg4 from '../../assets/images/NewsCardImg4.png';
 import CardViewImg1 from '../../assets/images/CardViewImg1.png';
 import CardViewImg2 from '../../assets/images/CardViewImg2.png';
 import MediaCardImg1 from '../../assets/images/MediaCardBg1.png';
+import MediaCardImg2 from '../../assets/images/MediaCardBg2.png';
+import MediaCardImg3 from '../../assets/images/MediaCardBg3.png';
+import MediaCardImg4 from '../../assets/images/MediaCardBg4.png';
+import LinkCardIcon1 from '../../assets/images/icons/LinkCardIcon1.svg';
+import LinkCardIcon2 from '../../assets/images/icons/LinkCardIcon2.svg';
+
 import {
     SocialCoruptionIcon,
     SocialTelegramIcon,
@@ -22,7 +30,8 @@ import {
     ActivityCardIcon2,
     ActivityCardIcon3,
     ActivityCardIcon4,
-
+    PicIcon,
+    VideoIcon,
 } from '../../assets/icons/icons';
 
 import './Home.scss';
@@ -43,24 +52,24 @@ const Home = () => {
                 </div>
 
                 <div style={{display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: '65px'}}>
-                    <div className="card-view">
+                    <div className="card-view" style={{width: '47%'}}>
                         <CardView img={CardViewImg1} date="22 Avgust 2002, 12:56" title="Harbiylashtirlgan kon qutqaruv qismlarining tezkor tayyorgarligini monitoringi tadbiri bo‘lib o‘tdi" />
                         <CardView img={CardViewImg1} date="22 Avgust 2002, 12:56" title="Harbiylashtirlgan kon qutqaruv qismlarining tezkor tayyorgarligini monitoringi tadbiri bo‘lib o‘tdi" />
                     </div>
 
-                    <div className="card-view">
+                    <div className="card-view" style={{width: '47%'}}>
                         <CardView img={CardViewImg2} date="22 Avgust 2002, 12:56" title="“O‘zbekiston Respublikasining Konstitutsiyaviy sudi to‘g‘risida”gi Qonunning mazmun-mohiyati" />
                         <CardView img={CardViewImg2} date="22 Avgust 2002, 12:56" title="“O‘zbekiston Respublikasining Konstitutsiyaviy sudi to‘g‘risida”gi Qonunning mazmun-mohiyati" />
                     </div>
 
-                    <div>
-                        <div className="socialTelegram">
+                    <div style={{width: '27%'}}>
+                        <div className="socialTelegram" style={{width: '100%'}}>
                             <a href="https://www.telegram.org" target="_blank">
                                 <SocialLink telegramClass title="Qo‘mitaning rasmiy telegram sahifasiga a’zo bo‘ling" btn="Obuna bo‘lish" icon={<SocialTelegramIcon />} />
                             </a>
                         </div>
 
-                        <div className="socialCoruption">
+                        <div className="socialCoruption" style={{width: '100%'}}>
                             <a href="" target="_blank">
                                 <SocialLink coruptionClass title="Korrupsiya holatiga duch keldingizmi? Iltimos, darhol bizga murojaat qiling!" btn="Shikoyat yo‘llash" icon={<SocialCoruptionIcon />} />
                             </a>
@@ -118,25 +127,47 @@ const Home = () => {
 
                 <Title title="Media" buttons line />
                 
-                <div style={{marginBottom: '65px'}}>
+                <div style={{marginBottom: '65px', display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
                     <MediaCard
                         date="03 Yanvar 2020, 09:41"
                         title="Harbiylashtirilgan kon qutqaruv qismlarining tezkor tayyorgarligini monitoringi tadbiri bo‘lib o‘tdi"
                         img={MediaCardImg1}
+                        icon={<PicIcon />}
+                    />
+                    
+                    <MediaCard
+                        date="03 Yanvar 2020, 09:41"
+                        title="Harbiylashtirilgan kon qutqaruv qismlarining tezkor tayyorgarligini monitoringi tadbiri bo‘lib o‘tdi"
+                        img={MediaCardImg2}
+                        icon={<VideoIcon />}
                     />
 
                     <MediaCard
                         date="03 Yanvar 2020, 09:41"
                         title="Harbiylashtirilgan kon qutqaruv qismlarining tezkor tayyorgarligini monitoringi tadbiri bo‘lib o‘tdi"
-                        img={MediaCardImg1}
+                        img={MediaCardImg3}
+                        icon={<VideoIcon />}
                     />
 
                     <MediaCard
                         date="03 Yanvar 2020, 09:41"
                         title="Harbiylashtirilgan kon qutqaruv qismlarining tezkor tayyorgarligini monitoringi tadbiri bo‘lib o‘tdi"
-                        img={MediaCardImg1}
+                        img={MediaCardImg4}
+                        icon={<PicIcon />}
                     />
                 </div>
+
+                <Title title="Foydali havolalar" buttons />
+
+                <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '55px'}}>
+                    <LinkCard img={LinkCardIcon1} link="www.president.uz" title="O‘zbekiston respublikasi Prezidentining matbuot xizmati" />
+                    <LinkCard img={LinkCardIcon2} link="www.president.uz" title="O‘zbekiston respublikasi Prezidentining matbuot xizmati" />
+                    <LinkCard img={LinkCardIcon1} link="www.president.uz" title="O‘zbekiston respublikasi Prezidentining matbuot xizmati" />
+                    <LinkCard img={LinkCardIcon1} link="www.president.uz" title="O‘zbekiston respublikasi Prezidentining matbuot xizmati" />
+                    <LinkCard img={LinkCardIcon1} link="www.president.uz" title="O‘zbekiston respublikasi Prezidentining matbuot xizmati" />
+                </div>
+
+                <Footer />
             </div>
         </div>
     )

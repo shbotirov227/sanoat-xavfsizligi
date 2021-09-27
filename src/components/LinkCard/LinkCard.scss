@@ -1,0 +1,40 @@
+.LinkCard {
+    width: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all ease 0.5s;
+
+    &:hover {
+        .LinkCard-title {
+            color: #4C81DC;
+        }
+    }
+
+    &-img {
+        margin-bottom: 15px;
+        width: 65px;
+        height: 65px;
+    }
+
+    &-link {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: #4C81DC;
+        margin-bottom: 20px;
+    }
+
+    &-title {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        color: #05245B;
+        transition: all ease 0.5s;
+    }
+}

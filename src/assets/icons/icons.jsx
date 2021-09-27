@@ -155,6 +155,16 @@ const VideoIcon = () => {
     )
 }
 
+const MediaCardArrow = () => {
+    return (
+        <svg width="61" height="28" viewBox="0 0 61 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle opacity="0.4" cx="47" cy="14" r="13" stroke="#4C81DC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M1 14H49" stroke="#4C81DC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M45 8L51 14L45 20" stroke="#4C81DC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    )
+}
+
 export {
     Facebook,
     Instagram,
@@ -172,5 +182,6 @@ export {
     ActivityCardIcon3,
     ActivityCardIcon4,
     PicIcon,
-    VideoIcon
+    VideoIcon,
+    MediaCardArrow
 }
