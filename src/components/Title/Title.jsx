@@ -1,3 +1,4 @@
+import { TitleBtnIcon } from '../../assets/icons/icons';
 
 import './Title.scss';
 
@@ -15,10 +16,10 @@ const Title = ({title, text, buttons, line}) => {
                     buttons ? (
                         <div className="Title-buttons">
                             <span className="Title-num">1</span>
-                            <span className="Title-numLine"></span>
-                            <span className="Title-num">4</span>
-                            <button></button>
-                            <button></button>
+                            <div className="Title-numLine"></div>
+                            <span className="Title-num" style={{marginRight: '20px'}}>4</span>
+                            <button className="Title-btn" style={{marginRight: '15px'}}><TitleBtnIcon /></button>
+                            <button className="Title-btn" style={{transform: 'rotate(180deg)', paddingTop: '5px'}}><TitleBtnIcon /></button>
                         </div>
                     ) : undefined
                 }            

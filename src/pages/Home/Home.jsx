@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 import NewsCard from '../../components/NewsCard';
 import Title from '../../components/Title';
 import Header from '../../containers/Header';
@@ -30,6 +28,14 @@ import {
     ActivityCardIcon2,
     ActivityCardIcon3,
     ActivityCardIcon4,
+    ActivityCardIcon5,
+    ActivityCardIcon6,
+    ActivityCardIcon7,
+    ActivityCardIcon8,
+    ActivityCardIcon9,
+    ActivityCardIcon10,
+    ActivityCardIcon11,
+    ActivityCardIcon12,
     PicIcon,
     VideoIcon,
     UIC,
@@ -83,33 +89,63 @@ const Home = () => {
 
                 <div className="activityCards">
                     <ActivityCard
-                        cardIcon={ActivityCardIcon1}
+                        cardIcon={<ActivityCardIcon1 />}
                         cardTitle="Ko‘mir, kon-ruda va noruda sohalarida sanoat xavfsizligi inspeksiyasi"
                     />
 
                     <ActivityCard
-                        cardIcon={ActivityCardIcon1}
-                        cardTitle="Ko‘mir, kon-ruda va noruda sohalarida sanoat xavfsizligi inspeksiyasi"
+                        cardIcon={<ActivityCardIcon2 />}
+                        cardTitle="Geologiya-qidiruv ishlarini olib borishda sanoat xavfsizligi inspeksiyasi"
                     />
 
                     <ActivityCard
-                        cardIcon={ActivityCardIcon1}
-                        cardTitle="Ko‘mir, kon-ruda va noruda sohalarida sanoat xavfsizligi inspeksiyasi"
+                        cardIcon={<ActivityCardIcon3 />}
+                        cardTitle="Kimyo, neft-kimyo va metallurgiya sohalarida sanoat xavfsizligi inspeksiyasi"
                     />
 
                     <ActivityCard
-                        cardIcon={ActivityCardIcon1}
-                        cardTitle="Ko‘mir, kon-ruda va noruda sohalarida sanoat xavfsizligi inspeksiyasi"
+                        cardIcon={<ActivityCardIcon4 />}
+                        cardTitle="Gaz xo‘jaligida sanoat xavfsizligi inspeksiyasi"
                     />
 
                     <ActivityCard
-                        cardIcon={ActivityCardIcon1}
-                        cardTitle="Ko‘mir, kon-ruda va noruda sohalarida sanoat xavfsizligi inspeksiyasi"
+                        cardIcon={<ActivityCardIcon5 />}
+                        cardTitle="Donni saqlash va qayta ishlashda sanoat xavfsizligi inspeksiyasi"
                     />
 
                     <ActivityCard
-                        cardIcon={ActivityCardIcon1}
-                        cardTitle="Ko‘mir, kon-ruda va noruda sohalarida sanoat xavfsizligi inspeksiyasi"
+                        cardIcon={<ActivityCardIcon6 />}
+                        cardTitle="Istrohat bog‘lari attraksionlarini nazorat qilish inspeksiyasi"
+                    />
+
+                    <ActivityCard
+                        cardIcon={<ActivityCardIcon7 />}
+                        cardTitle="Bug‘ qozonxonalari, ko‘tarish inshootlari sanoat xafsizligi inspeksiyasi"
+                    />
+
+                    <ActivityCard
+                        cardIcon={<ActivityCardIcon8 />}
+                        cardTitle="Temir yo‘l transportida tashishda xavfli yuklarni yuklash, tushirish va saqlashda sanoat xavfsizligi inspeksiyasi"
+                    />
+
+                    <ActivityCard
+                        cardIcon={<ActivityCardIcon9 />}
+                        cardTitle="Kimyoviy va bakteriologik qurollarni taqiqlash to‘g‘risidagi konvensiyaning ijrosini nazorat qilish inspeksiyasi"
+                    />
+
+                    <ActivityCard
+                        cardIcon={<ActivityCardIcon10 />}
+                        cardTitle="Neft va gaz sohasida sanoat xavfsizligi inspeksiyasi"
+                    />
+
+                    <ActivityCard
+                        cardIcon={<ActivityCardIcon11 />}
+                        cardTitle="Akkreditatsiya va inspeksiya nazorati bo‘limi"
+                    />
+
+                    <ActivityCard
+                        cardIcon={<ActivityCardIcon12 />}
+                        cardTitle="Burg‘ulash va portlatish ishlari bo‘yicha"
                     />
                 </div>
 

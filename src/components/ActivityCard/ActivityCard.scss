@@ -1,7 +1,7 @@
 .ActivityCard {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 40px 25px;
     transition: all ease 0.5s;
     width: 418px;
@@ -13,6 +13,10 @@
 
         .ActivityCard-title {
             color: #fff;
+        }
+
+        .ActivityCard-icon {
+            fill: #fff;
         }
     }
 

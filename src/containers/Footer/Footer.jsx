@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom';
 import {
     Facebook,
     FooterLinkIcon1,
@@ -40,14 +41,20 @@ const Footer = () => {
                 </div>
 
                 <div className="footerLinks">
-                    <FooterLink title="Bo‘limlar" link={[
-                        "- Qo‘mita haqida",
-                        "- Qo‘mita faoliyati",
-                        "- Normativ hujjatlar",
-                        "- Interaktiv xizmatlar",
-                        "- Axborot xizmati",
-                        "- Biz bilan bog‘lanish"
-                    ]} />
+                    <FooterLink
+                        title="Bo‘limlar"
+                        icon1={[FooterLinkIcon1, FooterLinkIcon2, FooterLinkIcon3]}
+                        // icon2={<FooterLinkIcon2 />}
+                        // icon3={<FooterLinkIcon3 />}
+                        link={[
+                            "- Qo‘mita haqida",
+                            "- Qo‘mita faoliyati",
+                            "- Normativ hujjatlar",
+                            "- Interaktiv xizmatlar",
+                            "- Axborot xizmati",
+                            "- Biz bilan bog‘lanish",
+                        ]}
+                    />
 
                     <FooterLink
                         title="Foydali havolalar"
@@ -83,17 +90,19 @@ const Footer = () => {
                         <span className="footerRightLinks-title">Hisoblagichlar</span>
 
                         <div style={{display: 'flex', alignItems: 'center', justifyContent: 'flex-start'}}>
-                            <img src={CounterImg1} alt="" style={{marginRight: '30px'}} />
-                            <img src={CounterImg2} alt="" />
+                            <a href="/" target="_blank" rel="noreferrer"><img src={CounterImg1} alt="" style={{marginRight: '30px'}} /></a>
+                            <a href="/" target="_blank" rel="noreferrer"><img src={CounterImg2} alt="" /></a>
                         </div>
                     </div>
 
-                        <img src={DevelopmentImg} alt="" style={{width: '100%', marginTop: '40px'}} />
+                        <a href="https://uic.group/uz" target="_blank" rel="noreferrer">
+                            <img src={DevelopmentImg} alt="" style={{width: '100%', marginTop: '40px'}} />
+                        </a>
 
                     <div className="development">
-                        <span className="development-title">Sayt yaratish</span>
-                        <span className="development-title">Tizim ishlab chiqish</span>
-                        <span className="development-title">Mobil ilovalar</span>
+                        <a href="https://uic.group/uz" className="development-title">Sayt yaratish</a>
+                        <a href="https://uic.group/uz" className="development-title">Tizim ishlab chiqish</a>
+                        <a href="https://uic.group/uz" className="development-title">Mobil ilovalar</a>
                     </div>
                 </div>
             </div>

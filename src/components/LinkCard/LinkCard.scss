@@ -5,6 +5,12 @@
     justify-content: center;
     flex-direction: column;
     transition: all ease 0.5s;
+    padding: 0 50px;
+    border-right: 1px solid #CEDAE0;
+
+    &:last-child {
+        border: none;
+    }
 
     &:hover {
         .LinkCard-title {

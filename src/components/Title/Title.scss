@@ -35,20 +35,42 @@
         }
     }
 
-    &-num {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 17px;
-        color: #05245B;
-    }
+    .Title-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-    &-numLine {
-        content: "";
-        background: #000;
-        opacity: 0.4;
-        width: 35px;
-        height: 2px;
-        margin: 0 10px;
+        .Title-num {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: #05245B;
+        }
+    
+        .Title-numLine {
+            content: "";
+            background: #000;
+            opacity: 0.4;
+            width: 35px;
+            height: 2px;
+            margin: 0 10px;
+        }
+        .Title-btn {
+            fill: #97A4BA;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            transition: all ease 0.5s;
+            
+            &:hover {
+                fill: #05245B;
+            }
+
+            &:active {
+                fill: #05245B;
+            }
+        }
     }
 }
