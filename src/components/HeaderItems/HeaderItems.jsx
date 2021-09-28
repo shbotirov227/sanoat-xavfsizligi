@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Twitter, Telegram } from '../../assets/icons/icons';
+import { Facebook, Instagram, Twitter, Telegram, TelIcon } from '../../assets/icons/icons';
 import UzbLogo from '../../assets/images/Uzb.png';
 import BasicLogo from '../BasicLogo';
 
@@ -21,7 +21,7 @@ const HeaderItems = () => {
                 <div className="header-right">
                     <div className="selectSection">
                         <div>
-                            <h3 className="header-right-tel">+998 71 244 23 53</h3>
+                            <h3 className="header-right-tel" style={{display: 'flex', alignItems: 'center', justifyContent: 'flex-end'}}>+998 71 244 23 53 <span style={{marginLeft: 5}}><TelIcon /></span> </h3>
                             <span className="header-right-text">O‘zbekiston hududida qo‘ng‘iroq qilish bepul</span>
                         </div>
 

@@ -1,6 +1,67 @@
 .Footer {
     background: linear-gradient(89.97deg, #05245B 0.03%, #173A78 50%, #05245B 99.98%);
     padding: 40px 0;
+    position: relative;
+
+    .mapSite-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #05245B;
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #FFFFFF;
+        border-radius: 4px;
+        padding: 10px 15px;
+        position: absolute;
+        width: 8%;
+        left: 0;
+        right: 0;
+        top: -60px;
+        margin: auto;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .footerModal {
+        background: #FFFFFF;
+        border-radius: 5px;
+        padding: 25px 35px;
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: auto;
+        top: -790px;
+        
+
+        &-select {
+            cursor: pointer;
+            margin-left: 30px;
+            display: flex;
+            align-items: center;
+            
+            #footermodalselect {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 17px;
+                text-transform: uppercase;
+                color: #05245B;
+                outline: none;
+                border: none;
+            }
+
+            img {
+                margin-right: 10px;
+                margin-top: 3px;
+            }
+        }
+    }
 
     &-inner {
         display: flex;

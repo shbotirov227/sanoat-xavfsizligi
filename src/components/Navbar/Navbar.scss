@@ -9,20 +9,32 @@
     bottom: -30px;
     width: 100%;
     margin-bottom: 100px;
+    z-index: 1;
+
+    .NavbarModal {
+        right: 0;
+
+        &.active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    }
 
     .navbarLink {
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 16px;
         line-height: 19px;
         text-transform: uppercase;
         color: #05245B;
         padding: 25px 20px;
         transition: all ease 0.5s;
+        position: relative;
 
         &:hover {
-            color: #fff;
-            background: #4318BE;
+            // color: #fff;
+            background: #EFEFEF;
         }
     }
 
@@ -35,7 +47,9 @@
         fill: #05245B;
         transition: all ease 0.5s;
         cursor: pointer;
+        transform: translateY(0);
 
+        
         &.userIcon {
             fill: #fff;
             background: #4318BE;
@@ -45,6 +59,140 @@
             fill: #fff;
             background: #4318BE;
             // transform: matrix(-1, 0, 0, 1, 0, 0);
+        }
+
+        &.closeBtn {
+            display: none;
+        }
+    }
+
+    .Modal {
+        position: absolute;
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        background: #FFFFFF;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        width: 100%;
+        padding: 25px;
+        z-index: -1;
+        bottom: 67.5px;
+        overflow: hidden;
+
+        &-inner {
+            display: flex;
+            align-items: center;
+            width: 80%;
+        }
+
+        &-block {
+            background-image: url('../../assets/images/navbarModalBg1.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 7px;
+            width: 260px;
+            height: 120px;
+            margin-right: 75px;
+            &:last-child {
+                margin-right: 50px;
+            }
+
+            &.rangsiz {
+                background-image: url('../../assets/images/navbarModalBg2.png');
+            }
+
+            &.invert {
+                background-image: url('../../assets/images/navbarModalBg3.png');
+            }
+
+            
+            &-title {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 38px;
+                text-transform: uppercase;
+                padding: 5px 10px;
+                background: #FDFDFD;
+                border-radius: 7px;
+                width: 115px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                margin-top: 35px;
+
+                &.rangli {
+                    color: #05245B;
+                }
+    
+                &.rangsiz {
+                    color: #404040;
+                   
+                }
+    
+                &.invert {
+                    color: #FFFFFF;
+                    background-color: #000;
+                }
+            }
+            
+        }
+
+        &.visible {
+            display: flex;
+        }
+
+        &-radioSection {
+            width: 40%;
+
+            &-label {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 19px;
+                color: #05245B;
+                margin-left: 7px;
+                cursor: pointer;
+                margin-bottom: 10px;
+            }
+
+            .rangeSection {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .range-label {
+                    background: #05245B;
+                    width: 100%;
+                    height: 2px;
+                    padding: 15px 0;
+                    border-top: 1px solid #000;
+                    border-bottom: 1px solid #000;
+                }
+    
+                .range-size {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #8C8C8C;
+    
+                    &.big {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 23px;
+                        line-height: 28px;
+                        color: #8C8C8C;
+                    }
+                }
+            }
         }
     }
 }

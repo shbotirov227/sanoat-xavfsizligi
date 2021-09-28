@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { ArrowRight } from "../../assets/icons/icons";
 
 import './InteractiveBtn.scss';

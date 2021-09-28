@@ -71,13 +71,13 @@ const Home = () => {
 
                     <div style={{width: '27%'}}>
                         <div className="socialTelegram" style={{width: '100%'}}>
-                            <a href="https://www.telegram.org" target="_blank">
+                            <a href="https://www.telegram.org" rel="noreferrer" target="_blank">
                                 <SocialLink telegramClass title="Qo‘mitaning rasmiy telegram sahifasiga a’zo bo‘ling" btn="Obuna bo‘lish" icon={<SocialTelegramIcon />} />
                             </a>
                         </div>
 
                         <div className="socialCoruption" style={{width: '100%'}}>
-                            <a href="" target="_blank">
+                            <a href="/" rel="noreferrer" target="_blank">
                                 <SocialLink coruptionClass title="Korrupsiya holatiga duch keldingizmi? Iltimos, darhol bizga murojaat qiling!" btn="Shikoyat yo‘llash" icon={<SocialCoruptionIcon />} />
                             </a>
                         </div>

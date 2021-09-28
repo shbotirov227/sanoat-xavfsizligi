@@ -1,28 +1,145 @@
 
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
+
+import CounterImg1 from '../../assets/images/counterImg1.png';
+import CounterImg2 from '../../assets/images/counterImg2.png';
+import DevelopmentImg from '../../assets/images/developmentImg.png';
+import UzFlag from '../../assets/images/icons/uz-flag.png';
+import BasicLogo from '../../components/BasicLogo';
+import FooterLink from '../../components/FooterLink';
+import FooterModal from '../../components/FooterModal/FooterModal';
 import {
+    ExitIcon,
     Facebook,
     FooterLinkIcon1,
     FooterLinkIcon2,
     FooterLinkIcon3,
     FooterLinkIcon4,
     Instagram,
+    MapSiteIcon,
+    SearchIcon,
     Telegram,
     Twitter,
 } from '../../assets/icons/icons';
-import CounterImg1 from '../../assets/images/counterImg1.png';
-import CounterImg2 from '../../assets/images/counterImg2.png';
-import DevelopmentImg from '../../assets/images/developmentImg.png';
-import BasicLogo from '../../components/BasicLogo';
-import FooterLink from '../../components/FooterLink';
 
 import './Footer.scss';
 
 const Footer = () => {
+
+    const [ state, setState ] = useState(false);
+
     return (
         <div className="Footer">
+
+
+            <button className="mapSite-title" onClick={() => setState(true)}><span style={{marginRight: '10px'}}><MapSiteIcon /></span> Sayt xaritasi</button>
+
+            {
+                state ? (
+                    <div className="footerModal container">
+
+                        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '50px'}}>
+
+                            <button style={{outline: 'none', border: 'none', background: 'transparent', cursor: 'pointer'}} onClick={() => setState(false)}><ExitIcon /></button>
+                            <div style={{display: 'flex', alignItems: 'center'}}>
+                                <div style={{cursor: 'pointer'}}><SearchIcon /></div>
+                                
+                                <div className="footerModal-select">
+                                    <label htmlFor="footermodalselect">
+                                        <img src={UzFlag} alt="" />
+                                    </label>
+                                    <select name="modal-select" id="footermodalselect" >
+                                        <option value="uzb">UZB</option>
+                                        <option value="france">FR</option>
+                                        <option value="english">EN</option>
+                                        <option value="turkey">TR</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style={{display: 'flex', marginBottom: '50px'}}>
+                            <FooterModal
+                                modalStyle="marginRight: '100px'"
+                                title="Qo‘mita haqida"
+                                link={[
+                                    "Qo‘mita tarixi",
+                                    "Hay’at",
+                                    "Rahbariyat",
+                                    "Tuzilma",
+                                    "Markaziy apparat",
+                                    "Inspeksiyalar",
+                                    "Hududiy boshqarmalar",
+                                    "Kon-texnika inspeksiyalari",
+                                    "Idoraviy mansub tashkilotlar",
+                                    "Hamkorlik",
+                                    "Bo‘sh ish o‘rinlari"
+                                ]}
+                            />
+
+                            <FooterModal
+                                title="Axborot xizmati"
+                                link={[
+                                    "Qo‘mita yangiliklari",
+                                    "Yoshlar siyosati",
+                                    "Matbuot xizmati bilan bog‘lanish",
+                                    "Media",
+                                    "Tender e'lonlari va moliyaviy hisobotlar"
+                                ]}
+                            />
+
+                            <FooterModal
+                                title="Qo‘mita faoliyati"
+                                link={[
+                                    "Markaziy apparat",
+                                    "Akkreditatsiya va inspeksiya nazorati",
+                                    "Inspeksiyalar"
+                                ]}
+                            />
+
+                            <FooterModal
+                                title="Hujjatlar"
+                                link={[
+                                    "Normativ hujjatlar",
+                                    "Qarorlar",
+                                    "Rahbariyat",
+                                    "Buyruqlar",
+                                    "Qoidalar",
+                                    "Yo‘riqnomalar",
+                                    "Uslubiy qo‘llanmalar",
+                                    "Davlat tilida ish yuritish tartibi",
+                                    "O‘z kuchini yo‘qotgan hujjatlar",
+                                    "Loyihalar",
+                                    "Korrupsiyaga qarshi kurashish"
+                                ]}
+                            />
+                        </div>
+
+                        <div style={{display: 'flex', alignItems: 'flex-start'}}>
+                            <FooterModal
+                                title="Interaktiv xizmatlar"
+                                link={[
+                                    "Xizmatlar",
+                                    "Ochiq maʼlumotlar",
+                                    "Hujjat namunalari",
+                                    "Savol - javob",
+                                    "So‘rovnoma"
+                                ]}
+                            />
+
+                            <FooterModal
+                                title="Bog‘lanish"
+                                link={[
+                                    "Ishonch telefonlari",
+                                    "Foydali havolalar"
+                                ]}
+                            />
+                        </div>
+                    </div>
+                ) : undefined
+            }
+
             <div className="Footer-inner container">
-                
                 <div>
                     <BasicLogo elStyle="marginBottom: '0'" />
 
@@ -43,7 +160,7 @@ const Footer = () => {
                 <div className="footerLinks">
                     <FooterLink
                         title="Bo‘limlar"
-                        icon1={[FooterLinkIcon1, FooterLinkIcon2, FooterLinkIcon3]}
+                        icon1={[FooterLinkIcon1, FooterLinkIcon2, FooterLinkIcon3, FooterLinkIcon4]}
                         // icon2={<FooterLinkIcon2 />}
                         // icon3={<FooterLinkIcon3 />}
                         link={[
