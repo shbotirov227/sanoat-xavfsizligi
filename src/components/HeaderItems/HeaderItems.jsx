@@ -1,8 +1,6 @@
-import { Link } from 'react-router-dom';
-
 import { Facebook, Instagram, Twitter, Telegram } from '../../assets/icons/icons';
-import HeadLogo from '../../assets/images/icons/HeadLogo.png';
 import UzbLogo from '../../assets/images/Uzb.png';
+import BasicLogo from '../BasicLogo';
 
 import './HeaderItems.scss';
 
@@ -12,11 +10,8 @@ const HeaderItems = () => {
             <div className="header-inner">
 
                 <div className="header-left">
-                    <Link to="/" className="headerLogo">
-                        <img src={HeadLogo} alt="" />
-                        <h2 className="headerLogo-title">O'zbekiston Respublikasi<br></br>Sanoat xavfsizligi davlat qo'mitasi</h2>
-                    </Link>
-
+                    
+                    <BasicLogo />
                     <div className="blockquote">
                         <blockquote className="blockquote-title">Sanoat xavfsizligini ta’minlash,<br></br>kelajakda yuksalish demakdir.</blockquote>
                         <figcaption className="blockquote-auth">G.B.Vahabovich</figcaption>
@@ -41,19 +36,20 @@ const HeaderItems = () => {
                     <img src={UzbLogo} alt="" className="header-right-img" />
 
                     <div className="header-right-links">
-                        <a href="https://www.facebook.com" target="_blank" className="header-right-link">
+                        <a href="https://www.facebook.com" rel="noreferrer" target="_blank" className="header-right-link">
                             <Facebook />
                         </a>
-                        <a href="https://www.instagram.com" target="_blank" className="header-right-link">
+                        <a href="https://www.instagram.com" rel="noreferrer" target="_blank" className="header-right-link">
                             <Instagram />
                         </a>
-                        <a href="https://www.twitter.com" target="_blank" className="header-right-link">
+                        <a href="https://www.twitter.com" rel="noreferrer" target="_blank" className="header-right-link">
                             <Twitter />
                         </a>
-                        <a href="https://www.telegram.org" target="_blank" className="header-right-link">
+                        <a href="https://www.telegram.org" rel="noreferrer" target="_blank" className="header-right-link">
                             <Telegram />
                         </a>
                     </div>
+                    
                 </div>
 
             </div>

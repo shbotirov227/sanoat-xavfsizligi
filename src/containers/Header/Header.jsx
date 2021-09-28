@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <div className="Header">
             <HeaderTopTitle />
-
+    
             <div className="container">
                 <HeaderItems />
                 <Navbar links={[ "qo‘mita haqida", "Qo‘mita faoliyati", "hujjatlar", "Interaktiv xizmatlar", "axborot xizmati", "bog‘lanish" ]}/>

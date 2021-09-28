@@ -5,29 +5,9 @@
         height: 410px;
         margin-top: 65px;
 
-        .header-left {
-
-        }
-
-        .headerLogo {
-            display: flex;
-            align-items: center;
-            margin-bottom: 85px;
-
-            
-
-            &-title {
-                color: #FFFFFF;
-                font-weight: normal;
-                font-style: normal;
-                letter-spacing: 1px;
-                text-transform: uppercase;
-                font-size: 20px;
-                margin-left: 15px;
-            }
-        }
-
         .blockquote {
+            margin-top: 100px;
+
             &-title {
                 font-style: normal;
                 font-weight: 500;

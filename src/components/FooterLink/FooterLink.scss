@@ -1,0 +1,35 @@
+.FooterLink {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin-right: 180px;
+    
+    &-title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 25px;
+    }
+
+    &-link {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: rgba(255, 255, 255, 0.8);
+        padding: 11px 0;
+        transition: all ease 0.5s;
+        position: relative;
+        display: block;
+
+        &:hover {
+            color: #FFFFFF;
+        }
+    }
+
+}

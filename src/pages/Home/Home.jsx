@@ -32,6 +32,7 @@ import {
     ActivityCardIcon4,
     PicIcon,
     VideoIcon,
+    UIC,
 } from '../../assets/icons/icons';
 
 import './Home.scss';
@@ -167,8 +168,20 @@ const Home = () => {
                     <LinkCard img={LinkCardIcon1} link="www.president.uz" title="O‘zbekiston respublikasi Prezidentining matbuot xizmati" />
                 </div>
 
-                <Footer />
             </div>
+                <Footer />
+                    
+                <div className="copyright" style={{border: '0.5px solid #E1E1E1', boxSizing: 'border-box'}}>
+                    <div className="container" style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'space-between',
+                            padding: '20px 0',
+                        }}>
+                        <span className="copyright-left">O‘zbekiston Respublikasi Sanoat xavfsizligi davlat qo‘mitasi © 2020 Barcha huquqlar qonun bilan himoyalangan.</span>
+                        <span className="copyright-right">Designed and developed by <span style={{marginLeft: '5px'}}><UIC /></span></span>
+                    </div>
+                </div>                
         </div>
     )
 }
